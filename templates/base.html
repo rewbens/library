@@ -1,0 +1,11 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css')}}" />
+    <title>{{title}} - Flask Library</title>
+  </head>
+  <body>
+    <h1>Brentford Library</h1>
+    <hr />
+    {% block content %}{% endblock %}
+  </body>
+</html>
