@@ -1,0 +1,35 @@
+body {
+  background-color: #141414;
+  color: #ffffff;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+header {
+  background-color: #000000;
+}
+
+.book-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.book {
+  background-color: #303030;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.book:hover {
+  transform: scale(1.05);
+}
+
+nav ul li a {
+  color: #ffffff;
+}
+
+.checked-out {
+  color: red;
+  opacity: 0.5;
+}

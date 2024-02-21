@@ -21,8 +21,8 @@
     <input type="text" name="isbn" id="isbn" />
     <label for="checkedout">On loan: </label>
     <select id="checkedout" name="checkedout">
-      <option value="true">Yes</option>
-      <option value="false">No</option>
+      <option value="true">No</option>
+      <option value="false">Yes</option>
     </select>
     <tr>
       <td colspan="2">
@@ -70,6 +70,16 @@
     <h3>Author: {{ book.author}}</h3>
     <h3>Genre: {{ book.genre}}</h3>
     <h3>ISBN: {{ book.isbn}}</h3>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="{{ url_for('book_details', title=book.title) }}"
+            >View Details</a
+          >
+        </li>
+      </ul>
+    </nav>
   </div>
 
   {% endfor %}
